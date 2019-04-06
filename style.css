@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+body{
+	margin: 0; background-color: #333333; color: #ffffff; font-size: 14pt;font-family: 'Oxygen'; width: 100%;
+}
+#header{
+	position: fixed;
+	min-height: 125px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #333333;
+	border-bottom: 1px solid gray;
+	z-index: 1;
+}
+#header-img{
+	height: 125px;
+}
+.nav-link{
+	text-decoration: none;
+	color: #ffffff;
+	margin: 0 60px;
+}
+
+#content{
+	padding-top: 125px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Oxygen';
+	font-size: 13pt;
+}
+
+#form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+input{
+	font-family: 'Oxygen';
+	margin: 5px 0;
+	background: #ffffff;
+	color: #333333;
+	opacity: .9;
+}
+#email{
+	width: 200px;
+}
+
+#features{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 40px 0;
+}
+
+.feature{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	max-width: 725px;
+}
+
+.pre-view{
+	width: 100px;
+	margin-right: 20px;
+}
+
+.description{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+input{
+	border: none;
+	font-size: 12pt;
+	font-family: 'Oxygen';
+}
+
+iframe{
+	overflow: hidden;
+	max-width: 560px;
+}
+#pricing{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.price{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid grey;
+	margin: 20px;
+	max-width: 200px;
+}
+
+.name-feature{
+	background: grey;
+	width: 100%;
+	text-align: center;
+}
+
+.text{
+	text-align: center;
+}
+.text p{
+	margin: 15px  5px;
+}
+
+@media screen and (max-width: 768px){
+	.nav-link{
+		margin: 0 30px;
+	}
+}
+
+@media screen and (max-width: 630px){
+	#pricing{
+		flex-direction: column;
+		align-items: center;
+
+	}
+	.price{
+		min-width: 300px;
+		max-width: auto;
+		margin-left: 60px;
+	}
+}
+
+@media screen and (max-width: 560px){
+	iframe{
+		max-width: 460px;
+	}
+}
+
+@media screen and (max-width: 480px){
+	#header{
+		flex-direction: column;
+		align-items: center;
+	}
+	#nav-bar{
+		margin-bottom: 10px;
+	}
+	.nav-link{
+		margin: 0 20px;
+	}
+	#content{
+		padding-top: 135px;
+	}
+
+}
+
